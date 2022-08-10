@@ -570,8 +570,8 @@ Here's a simple diagram to help visualize this
 
 As you can tell from the above diagram it's possible to access parent routing controllers by calling `router.parent<T>()`, we're using a generic function because we have too different routing controllers  `StackRouter` and `TabsRouter`, one of them could be the parent controller of the current router and that's why we need to specify a type.
 ```dart              
-router.parent<StackRouter>() // this returns  the parent router as a Stack Routing controller              
-router.parent<TabsRouter>() // this returns athe parent router as a Tabs Routing controller              
+router.parent<StackRouter>() // this returns the parent router as a Stack Routing controller              
+router.parent<TabsRouter>() // this returns the parent router as a Tabs Routing controller              
 ```              
 on the other hand obtaining the root controller does not require type casting because it's always a `StackRouter`.
 ```dart              
